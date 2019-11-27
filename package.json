@@ -1,11 +1,12 @@
 {
   "name": "project3",
   "version": "1.0.0",
-  "description": "",
+  "description": "Social network",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
+    "server": "nodemon server",
     "seed": "node scripts/seedDB.js"
   },
   "repository": {
@@ -13,14 +14,24 @@
     "url": "git+https://github.com/Keerthi-Mani/Project-3.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Keerthi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Keerthi-Mani/Project-3/issues"
   },
   "homepage": "https://github.com/Keerthi-Mani/Project-3#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.2.4",
     "express": "^4.17.1",
-    "mongoose": "^5.7.12"
+    "express-validator": "^6.3.0",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.12",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "nodemon": "^2.0.1"
   }
 }

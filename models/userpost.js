@@ -15,7 +15,7 @@ const postSchema = new Schema({
     {
       text: String,
       created: { type: Date, default: Date.now },
-      commentedBy: { type: mongoose.Schema.ObjectId, ref: "User" }
+      postedBy: { type: mongoose.Schema.ObjectId, ref: "User" }
     }
   ],
   postedBy: { type: mongoose.Schema.ObjectId, ref: "User" },

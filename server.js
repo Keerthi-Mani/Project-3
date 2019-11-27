@@ -1,14 +1,18 @@
 var express = require("express");
-//var logger = require("morgan");
+const connectDB = require("./config/db");
 var mongoose = require("mongoose");
 
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
+
+// Initialize Express
+var app = express();
+
+//Connect Database
+connectDB();
 
 // Requiring the `User` model for accessing the `users` collection
 var User = require("./models/user.js");
 var Post = require("./models/userpost.js");
-// Initialize Express
-var app = express();
 
 // Configure middleware
 
@@ -24,7 +28,7 @@ app.use(express.static("public"));
 mongoose.connect("mongodb://localhost/socialapp", { useNewUrlParser: true });
 
 // Routes
-
+app.get("/", (req, res) => res.send("API running"));
 // Route to post our form submission to mongoDB via mongoose
 app.post("/submit", function(req, res) {
   console.log(req.body.username);
