@@ -11,7 +11,7 @@ const Navbar = () => {
         </h1>
         <ul>
           <li>
-            <a href="profiles.html">Friends</a>
+            <a href="profiles.html">My Profile</a>
           </li>
           <li>
             <Link to="/register">Register</Link>
