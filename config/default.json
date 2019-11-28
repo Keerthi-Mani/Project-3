@@ -1,0 +1,5 @@
+{
+    "mongoURI": "mongodb://shital:shital732@ds033599.mlab.com:33599/heroku_jm8pw3rv",
+    "jwtSecret": "mysecrettoken"
+
+}
