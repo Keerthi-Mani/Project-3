@@ -5,6 +5,8 @@ const Dashboard = props => {
   return <div>Dashboard</div>;
 };
 
-Dashboard.propTypes = {};
+Dashboard.propTypes = {
+  auth: PropTypes.object.isRequired
+};
 
 export default Dashboard;

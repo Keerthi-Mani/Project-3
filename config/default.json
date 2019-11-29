@@ -1,5 +1,4 @@
 {
-    "mongoURI": "mongodb://shital:shital732@ds033599.mlab.com:33599/heroku_jm8pw3rv",
-    "jwtSecret": "mysecrettoken"
-
+  "mongoURI": "mongodb+srv://keerthi123:keerthi123@socialapp-0aijw.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken"
 }
