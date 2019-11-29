@@ -18,7 +18,7 @@ if (localStorage.token) {
 }
 
 const App = () => {
-  //when the state updates it keeps running once
+  //If you want to run an effect and clean it up only once (on mount and unmount), you can pass an empty array ([]) as a second argument
   useEffect(() => {
     store.dispatch(loadUser());
   }, []);
