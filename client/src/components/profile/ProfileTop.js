@@ -8,12 +8,16 @@ const ProfileTop = ({
     website,
     social,
     location,
+    twitter,
+    facebook,
+    youtube,
+    instagram,
     user: { name, avatar }
   }
 }) => {
   return (
     //<!-- Top -->
-    <div class="profile-top bg-primary p-2">
+    <div>
       <img class="round-img my-1" src={avatar} alt="" />
       <h1 class="large">{name}</h1>
       <p class="lead">
@@ -21,11 +25,10 @@ const ProfileTop = ({
       </p>
       <p>{location && <span>{location}</span>}</p>
 
-      {/* Links to Socila Media */}
       <div class="icons my-1">
         {website && (
           <a href={website} target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-globe fa-2x"></i>)
+            <i class="fas fa-globe fa-2x"></i>
           </a>
         )}
 
