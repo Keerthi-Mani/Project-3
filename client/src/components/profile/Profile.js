@@ -8,7 +8,6 @@ import ProfileAbout from "./ProfileAbout";
 import ProfileExperience from "./ProfileExperience";
 import ProfileEducation from "./ProfileEducation";
 import { getProfileById } from "../../actions/profile";
-import ProfileEducation from "./ProfileEducation";
 
 const Profile = ({
   getProfileById,
