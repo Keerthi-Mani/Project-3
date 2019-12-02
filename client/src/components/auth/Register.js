@@ -88,12 +88,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
             minLength="6"
           />
         </div>
-        <input
-          onSubmit={e => onSubmit(e)}
-          type="submit"
-          className="btn btn-primary"
-          value="Register"
-        />
+        <input type="submit" className="btn btn-primary" value="Register" />
       </form>
       <p className="my-1">
         Already have an account? <Link to="login.html">Sign In</Link>
