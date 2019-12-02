@@ -20,7 +20,7 @@ const Login = ({ login, isAuthenticated }) => {
     });
 
   //When user submit the form
-  const onSubmit = e => {
+  const onSubmit = async e => {
     e.preventDefault();
     //console.log("SUCCESS");
     login(email, password);
