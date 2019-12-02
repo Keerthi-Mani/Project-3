@@ -5,6 +5,8 @@ import { connect } from "react-redux";
 import Spinner from "../layout/Spinner";
 import PostItems from "../posts/PostItems";
 import { getPost } from "../../actions/post";
+import CommentForm from "../post/CommentForm";
+import CommentItem from "../post/CommentItem";
 
 const Post = ({ getPost, post: { post, loading }, match }) => {
   useEffect(() => {
@@ -19,6 +21,12 @@ const Post = ({ getPost, post: { post, loading }, match }) => {
         Back To Posts
       </Link>
       <PostItems post={post} showActions={false} />
+      <CommentForm postId={post._id} />
+      <div className="comments">
+        {post.comments.map(comment => (
+          <CommentItem key={comment._id} comment={comment} postId={post._id} />
+        ))}
+      </div>
     </Fragment>
   );
 };
