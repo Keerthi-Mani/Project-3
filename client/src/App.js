@@ -15,6 +15,9 @@ import Profile from "./components/profile/Profile";
 import Posts from "./components/posts/Posts";
 import Post from "./components/post/Post";
 import PrivateRoute from "./components/routing/PrivateRoute";
+import { subscribeToTimer, readChat, sendChat } from "./sockethelper.js";
+import Chat from "./components/layout/Chat";
+
 //redux
 import { Provider } from "react-redux";
 import store from "./store";
@@ -47,6 +50,8 @@ const App = () => {
               <Route exact path="/profiles" component={Profiles} />
               <Route exact path="/profile/:id" component={Profile} />
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
+              <Route exact path="/chat" component={Chat} />
+
               <PrivateRoute
                 exact
                 path="/create-profile"
