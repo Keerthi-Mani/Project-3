@@ -329,6 +329,12 @@ button {
 .navbar .welcome span {
   margin-right: 0.6rem;
 }
+/* Chat */
+
+.chat-input {
+  width: 70%;
+  height: 40px;
+}
 
 /* Landing Page */
 .landing {

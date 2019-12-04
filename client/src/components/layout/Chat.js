@@ -32,16 +32,20 @@ class Chat extends React.Component {
     console.log("this is state", this.state);
     return (
       <>
+        <h1 className="large text-primary">Chat</h1>
         <div>
           {this.state.conversation.map((text, i) => {
             return <p key={i}> {text}</p>;
           })}
         </div>
-        <h1 className="large text-primary">Chat</h1>
 
         <p className="App-intro">{this.state.timestamp}</p>
 
-        <input value={this.state.msg} onChange={this.handleTyping}></input>
+        <input
+          className="chat-input"
+          value={this.state.msg}
+          onChange={this.handleTyping}
+        ></input>
         <br></br>
         <button onClick={this.handleSubmit}>Submit</button>
       </>
