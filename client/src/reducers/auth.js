@@ -30,6 +30,7 @@ export default function(state = initialState, action) {
       };
     case REGISTER_SUCCESS:
     case LOGIN_SUCCESS:
+      console.log("AUTH.LOGIN_SUCCESS");
       localStorage.setItem("token", payload.token);
       return {
         ...state,

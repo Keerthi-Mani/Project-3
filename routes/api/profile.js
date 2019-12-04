@@ -16,7 +16,9 @@ router.get("/me", auth, async (req, res) => {
     }).populate("user", ["name", "avatar"]);
 
     if (!profile) {
-      return res.status(400).json({ msg: "There is no profile for this user" });
+      return res.status(400).json({
+        msg: "There is no profile for this user"
+      });
     }
 
     res.json(profile);
@@ -24,6 +26,8 @@ router.get("/me", auth, async (req, res) => {
     console.error(err.message);
     res.status(500).send("Server error");
   }
+  // console.log("My Profile", profile);
+  // console.log("User_Id :", user);
 });
 
 //@route POST api/profile/

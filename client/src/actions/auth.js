@@ -15,6 +15,7 @@ import setAuthToken from "../utils/setAuthToken";
 //Load User
 export const loadUser = () => async dispatch => {
   if (localStorage.token) {
+    console.log("loadUser.localStorage.token= ", localStorage.token);
     setAuthToken(localStorage.token);
   }
   //console.log("loaduser");
@@ -80,6 +81,7 @@ export const login = (email, password) => async dispatch => {
   try {
     const res = await axios.post("/api/auth", body, config);
 
+    console.log("/api/auth res.data= ", res.data);
     dispatch({
       type: LOGIN_SUCCESS,
       payload: res.data
