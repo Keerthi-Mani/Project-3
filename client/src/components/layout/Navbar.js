@@ -34,9 +34,6 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
         <Link to="/profiles">Friends</Link>
       </li>
       <li>
-        <a href="#!">My Profile</a>
-      </li>
-      <li>
         <Link to="/register">Register</Link>
       </li>
       <li>
@@ -49,7 +46,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     <nav className="navbar bg-dark">
       <h1>
         <Link to="/">
-          <i className="fas fa-code"></i> Friends Connector
+          <i className="fas"></i> Friends Connector
         </Link>
       </h1>
       {!loading && (

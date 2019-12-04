@@ -53,8 +53,10 @@ const CreateProfile = ({ createProfile, history }) => {
         <div className="form-group">
           <select name="status" value={status} onChange={e => onChange(e)}>
             <option value="0">* Select Professional Status</option>
-            <option value="Developer">Engineer</option>
-            <option value="Junior Developer">Doctor</option>
+            <option value="Developer">Developer</option>
+            <option value="Junior Developer">Junior Developer</option>
+            <option value="Engineer">Engineer</option>
+            <option value="Doctor">Doctor</option>
             <option value="Manager">Manager</option>
             <option value="Student or Learning">Student</option>
             <option value="Instructor">Instructor or Teacher</option>
@@ -194,4 +196,5 @@ CreateProfile.propTypes = {
   createProfile: PropTypes.func.isRequired
 };
 
+//React-redux connect
 export default connect(null, { createProfile })(withRouter(CreateProfile));

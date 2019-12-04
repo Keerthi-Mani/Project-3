@@ -28,7 +28,7 @@ const AddEducation = ({ addEducation, history }) => {
   } = formData;
 
   const onChange = e => {
-    setFormData({ ...formData, [e.target.name]: [e.target.value] });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   return (
@@ -41,7 +41,7 @@ const AddEducation = ({ addEducation, history }) => {
       <small>* = required field</small>
       <form
         className="form"
-        onsubmit={e => {
+        onSubmit={e => {
           e.preventDefault();
           addEducation(formData, history);
         }}

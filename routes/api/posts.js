@@ -2,11 +2,11 @@ const express = require("express");
 const router = express.Router();
 const { check, validationResult } = require("express-validator");
 const auth = require("../../middleware/auth");
-
 const Post = require("../../models/Post");
 const User = require("../../models/User");
+const Profile = require("../../models/Profile");
 
-//@route GET api/post
+//@route POST api/post
 //@desc Create a post
 //@access Private
 router.post(
@@ -44,8 +44,8 @@ router.post(
   }
 );
 
-//@route GET api/post
-//@desc Get all  post
+//@route GET api/posts
+//@desc Get all posts
 //@access Private
 
 router.get("/", auth, async (req, res) => {
@@ -58,8 +58,8 @@ router.get("/", auth, async (req, res) => {
   }
 });
 
-//@route GET api/posts/:id
-//@desc Get  post by id
+//@route GET api/post/:id
+//@desc Get post by id
 //@access Private
 
 router.get("/:id", auth, async (req, res) => {
@@ -80,8 +80,8 @@ router.get("/:id", auth, async (req, res) => {
   }
 });
 
-//@route Delete  api/post/:id
-//@desc Delete  post
+//@route Delete api/post/:id
+//@desc Delete a post
 //@access Private
 
 router.delete("/:id", auth, async (req, res) => {
