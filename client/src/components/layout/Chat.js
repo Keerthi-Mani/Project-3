@@ -35,10 +35,14 @@ class Chat extends React.Component {
         <h1 className="large text-primary">Chat</h1>
         <div>
           {this.state.conversation.map((text, i) => {
-            return <p key={i}> {text}</p>;
+            return (
+              <section className="text" key={i}>
+                {" "}
+                {text}
+              </section>
+            );
           })}
         </div>
-
         <p className="App-intro">{this.state.timestamp}</p>
         <div className="chat-div">
           <input
@@ -47,7 +51,7 @@ class Chat extends React.Component {
             onChange={this.handleTyping}
           ></input>
           <br></br>
-          <button onClick={this.handleSubmit} className="btn btn-primary my-1">
+          <button onClick={this.handleSubmit} className="btn btn-primary">
             Submit
           </button>
         </div>
