@@ -25,10 +25,6 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
               profiles
                 .filter(profile => profile.user)
                 .map(profile => {
-<<<<<<< HEAD
-                  //console.log("profile: ", profile)
-=======
->>>>>>> 6fff4f87009dcb80d0c090acb1931a82b2c733ab
                   return <ProfileItem key={profile._id} profile={profile} />;
                 })
             ) : (
