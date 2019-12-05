@@ -21,7 +21,7 @@ const Posts = ({ getPosts, post: { posts, loading } }) => {
       </p>
       <PostForm />
       <div className="posts">
-        {posts.mao(post => (
+        {posts.map(post => (
           <PostItems key={post._id} post={post} />
         ))}
       </div>
