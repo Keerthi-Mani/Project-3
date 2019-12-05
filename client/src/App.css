@@ -332,8 +332,15 @@ button {
 /* Chat */
 
 .chat-input {
-  width: 70%;
+  width: 60%;
   height: 40px;
+  margin-right: 75px;
+}
+.chat-div {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 /* Landing Page */

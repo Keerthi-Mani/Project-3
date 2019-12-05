@@ -1,5 +1,5 @@
 import React from "react";
-import { readChat, sendChat } from "../../sockethelper";
+import { subscribeToTimer, readChat, sendChat } from "../../sockethelper";
 
 class Chat extends React.Component {
   constructor(props) {
@@ -40,14 +40,17 @@ class Chat extends React.Component {
         </div>
 
         <p className="App-intro">{this.state.timestamp}</p>
-
-        <input
-          className="chat-input"
-          value={this.state.msg}
-          onChange={this.handleTyping}
-        ></input>
-        <br></br>
-        <button onClick={this.handleSubmit}>Submit</button>
+        <div className="chat-div">
+          <input
+            className="chat-input"
+            value={this.state.msg}
+            onChange={this.handleTyping}
+          ></input>
+          <br></br>
+          <button onClick={this.handleSubmit} className="btn btn-primary my-1">
+            Submit
+          </button>
+        </div>
       </>
     );
   }
