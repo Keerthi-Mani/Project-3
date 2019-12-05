@@ -32,8 +32,7 @@ class Chat extends React.Component {
     console.log("this is state", this.state);
     return (
       <>
-        <h1 className="large text-primary">Chat</h1>
-        <div>
+        <div className="chat-text">
           {this.state.conversation.map((text, i) => {
             return (
               <section className="text" key={i}>

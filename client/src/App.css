@@ -332,15 +332,24 @@ button {
 /* Chat */
 
 .chat-input {
-  width: 60%;
+  width: 50%;
   height: 40px;
-  margin-right: 75px;
+  /* margin-right: 75px;*/
 }
 .chat-div {
   display: flex;
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 40%;
+  margin-left: 50%;
+}
+.chat-text {
+  margin-left: 75%;
+  height: 250px;
+  overflow: scroll;
+  border: lightseagreen 2px solid;
+  padding: 10px;
+  margin-top: 100px;
 }
 
 /* Landing Page */
