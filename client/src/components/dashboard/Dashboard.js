@@ -46,7 +46,7 @@ const Dashboard = ({
           </Link>
         </Fragment>
       )}
-      <Chat />
+      <Chat user={user && user.name} />
     </Fragment>
   );
 };

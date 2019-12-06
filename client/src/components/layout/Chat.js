@@ -4,6 +4,8 @@ import { subscribeToTimer, readChat, sendChat } from "../../sockethelper";
 class Chat extends React.Component {
   constructor(props) {
     super(props);
+    console.log("props.user: ", props);
+
     readChat(msg => {
       console.log("message from soket.io", msg);
       var oldArray = this.state.conversation;
@@ -36,7 +38,7 @@ class Chat extends React.Component {
           {this.state.conversation.map((text, i) => {
             return (
               <section className="text" key={i}>
-                {" "}
+                {this.props.user + ":  "}
                 {text}
               </section>
             );
