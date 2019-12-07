@@ -5,19 +5,15 @@ const ProfileTop = ({
   profile: {
     status,
     company,
+    location,
     website,
     social,
-    location,
-    twitter,
-    facebook,
-    youtube,
-    instagram,
     user: { name, avatar }
   }
 }) => {
   return (
     //<!-- Top -->
-    <div>
+    <div className="profile-top bg-primary p-2">
       <img className="round-img my-1" src={avatar} alt="" />
       <h1 className="large">{name}</h1>
       <p className="lead">
@@ -33,25 +29,25 @@ const ProfileTop = ({
         )}
 
         {social && social.twitter && (
-          <a href={twitter} target="_blank" rel="noopener noreferrer">
+          <a href={social.twitter} target="_blank" rel="noopener noreferrer">
             <i className="fab fa-twitter fa-2x"></i>
           </a>
         )}
 
         {social && social.facebook && (
-          <a href={facebook} target="_blank" rel="noopener noreferrer">
+          <a href={social.facebook} target="_blank" rel="noopener noreferrer">
             <i className="fab fa-facebook fa-2x"></i>
           </a>
         )}
 
         {social && social.youtube && (
-          <a href={youtube} target="_blank" rel="noopener noreferrer">
+          <a href={social.youtube} target="_blank" rel="noopener noreferrer">
             <i className="fab fa-youtube fa-2x"></i>
           </a>
         )}
 
         {social && social.instagram && (
-          <a href={instagram} target="_blank" rel="noopener noreferrer">
+          <a href={social.instagram} target="_blank" rel="noopener noreferrer">
             <i className="fab fa-instagram fa-2x"></i>
           </a>
         )}

@@ -40,6 +40,7 @@ const EditProfile = ({
       youtube: loading || !profile.social ? "" : profile.social.youtube,
       instagram: loading || !profile.social ? "" : profile.social.instagram
     });
+    // prop to depend on
   }, [loading, getCurrentProfile]);
 
   const {

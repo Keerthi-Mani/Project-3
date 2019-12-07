@@ -20,6 +20,7 @@ Alert.propTypes = {
 const mapStateToProps = state => ({
   alerts: state.alert
 });
+//console.log(alerts);
 
 //Connect it to redux
 export default connect(mapStateToProps)(Alert);
