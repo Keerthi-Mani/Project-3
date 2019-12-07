@@ -13,8 +13,8 @@ const Landing = ({ isAuthenticated }) => {
         <div className="landing-inner">
           <h1 className="x-large">Friends Connector</h1>
           <p className="lead">
-            Create a Friends profile/portfolio, share posts and get help from
-            other friends
+            Create a your profile, share posts,comments and get help from other
+            friends
           </p>
           <div className="buttons">
             <Link to="/register" className="btn btn-primary">
