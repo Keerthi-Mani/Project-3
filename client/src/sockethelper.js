@@ -1,5 +1,5 @@
 import openSocket from "socket.io-client";
-const socket = openSocket("http://localhost:5001");
+const socket = openSocket("http://10.0.0.187:5001");
 function subscribeToTimer(cb) {
   socket.on("timer", timestamp => cb(null, timestamp));
   socket.emit("subscribeToTimer", 1000);

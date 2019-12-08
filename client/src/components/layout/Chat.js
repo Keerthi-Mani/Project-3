@@ -38,7 +38,7 @@ class Chat extends React.Component {
           {this.state.conversation.map((text, i) => {
             return (
               <section className="text" key={i}>
-                {this.props.user + ":  "}
+                <strong> {this.props.user + ":  "} </strong>
                 {text}
               </section>
             );
