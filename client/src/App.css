@@ -360,6 +360,7 @@ button {
 
   /* margin-right: 75px;*/
 }
+
 .chat-div {
   position: fixed;
   bottom: 100px;
@@ -626,5 +627,15 @@ button {
   .post a,
   .post button {
     padding: 0.3rem 0.4rem;
+  }
+  /* weather css */
+  .weather-container {
+    float: right;
+    width: 20%;
+    z-index: 2;
+  
+  }
+  .pyw-4 {
+    height: 30px;
   }
 }
