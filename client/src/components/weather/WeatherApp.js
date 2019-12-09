@@ -14,7 +14,7 @@ class WeatherApp extends React.Component {
     super();
     this.state = {
       city: undefined,
-      country: 'US',
+      country: "US",
       icon: undefined,
       main: undefined,
       celsius: undefined,
@@ -64,7 +64,7 @@ class WeatherApp extends React.Component {
   }
 
   calCelsius(temp) {
-    let cell = Math.floor(((temp-273.15)*1.8)+32);
+    let cell = Math.floor((temp - 273.15) * 1.8 + 32);
     return cell;
   }
 
@@ -121,4 +121,3 @@ class WeatherApp extends React.Component {
 }
 
 export default WeatherApp;
-
