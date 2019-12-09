@@ -36,7 +36,7 @@ img {
 
 /* Utilities */
 .container {
-  max-width: 1100px;
+  max-width: 100%;
   margin: auto;
   overflow: hidden;
   padding: 0 2rem;
@@ -330,26 +330,59 @@ button {
   margin-right: 0.6rem;
 }
 /* Chat */
+.chat-btn {
+  background-color: lightseagreen;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+.form-container .submit-btn {
+  position: fixed;
+  bottom: 90px;
+  right: 28px;
+  width: 280px;
+  height: 50px;
+  background-color: lightseagreen;
+  color: white;
+}
 
 .chat-input {
-  width: 50%;
-  height: 40px;
+  width: 280px;
+  height: 80px;
+  position: fixed;
+  bottom: 142px;
+  right: 31px;
+  background-color: whitesmoke;
+  border: none;
+
   /* margin-right: 75px;*/
 }
 .chat-div {
-  display: flex;
   position: fixed;
-  bottom: 0;
-  width: 40%;
-  margin-left: 50%;
+  bottom: 100px;
+  width: 280px;
+  right: 28px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
 }
-.chat-text {
-  margin-left: 75%;
-  height: 250px;
-  overflow: scroll;
-  border: lightseagreen 2px solid;
+.form-container {
+  max-width: 300px;
   padding: 10px;
-  margin-top: 100px;
+}
+.wrap {
+  position: relative;
+  bottom: 90px;
+  left: 1190px;
+  width: 280px;
+  height: 260px;
+  padding: 10px;
+  background-color: whitesmoke;
 }
 
 /* Landing Page */

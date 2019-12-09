@@ -5,7 +5,6 @@ const path = require("path");
 const app = express();
 var http = require("http").createServer(app);
 var io = require("socket.io")(http);
-const router = require("./routes/api/chat");
 
 //Connect to Port
 const PORT = process.env.PORT || 3001;
@@ -15,20 +14,11 @@ connectDB();
 
 //Init Middleware
 app.use(express.json({ extended: false }));
-app.use(router);
 
-// io.on("connection", function(socket) {
-//   console.log("a user connected");
-//   socket.on("chat message", function(msg) {
-//     io.emit("chat message", msg);
-//   });
-// });
-
-io.on("connection", socket => {
-  console.log("a user is connected");
-
-  socket.on("disconnect", () => {
-    console.log("user left");
+io.on("connection", function(socket) {
+  console.log("a user connected");
+  socket.on("chat message", function(msg) {
+    io.emit("chat message", msg);
   });
 });
 
