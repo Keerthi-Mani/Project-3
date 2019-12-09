@@ -1,0 +1,27 @@
+.App {
+  background-image: url("./assets/sky.jpg");
+  height: 650px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+
+}
+
+.weather-container {
+  float: right;
+  width: 50%;
+  /* z-index: 2; */
+
+}
+
+.container input,
+.container ::-webkit-input-placeholder {
+  color: black !important;
+}
+.container input:focus {
+  background-color: transparent;
+  box-shadow: none !important;
+  border: none;
+  border-bottom: 2px solid tomato;
+}

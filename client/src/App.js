@@ -17,6 +17,9 @@ import Post from "./components/post/Post";
 import PrivateRoute from "./components/routing/PrivateRoute";
 import Chat from "./components/layout/Chat";
 
+// openweathermap.org
+import WeatherApp from "./components/weather/WeatherApp";
+
 //redux
 import { Provider } from "react-redux";
 import store from "./store";
@@ -48,6 +51,7 @@ const App = () => {
               <Route exact path="/login" component={Login} />
               <Route exact path="/profiles" component={Profiles} />
               <Route exact path="/profile/:id" component={Profile} />
+              <Route exact path="/weather" component={WeatherApp} />
               <Route exact path="/chat" component={Chat} />
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
 
