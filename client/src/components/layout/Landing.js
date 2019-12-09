@@ -9,7 +9,6 @@ const Landing = ({ isAuthenticated }) => {
     return <Redirect to="/dashboard" />;
   }
   return (
-    <React.Fragment>
     <section className="landing">
       <div className="dark-overlay">
         <div className="landing-inner">
@@ -29,11 +28,6 @@ const Landing = ({ isAuthenticated }) => {
         </div>
       </div>
     </section>
-    <div className="weather-container">
-          <WeatherApp />
-    </div>
-    </React.Fragment>
-    
   );
 };
 
