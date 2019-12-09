@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
@@ -46,7 +46,7 @@ const Dashboard = ({
           </Link>
         </Fragment>
       )}
-      <Chat />
+      <Chat user={user && user.name} />
     </Fragment>
   );
 };
