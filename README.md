@@ -1,6 +1,8 @@
 <img width="1131" alt="Screen Shot 2019-12-10 at 11 44 30 AM" src="https://user-images.githubusercontent.com/52920074/70549600-7a305200-1b42-11ea-8e0e-0c554ff63904.png">
 
 <br>
+"Friendship is a <em>tremendous</em> thing. I see it all over social media – the need for friends. Some voice it as loneliness while others try to compensate by putting up a facade — but the truth remains — we all need friends."
+
 A platform for friends to connect. They can create their profile by adding their experience, education, skills and other important information of their professional career.
 
 Users can also create small posts and like/dislike and comment on other posts.
