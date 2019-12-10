@@ -328,7 +328,7 @@ button {
 }
 /* Chat */
 .chat-btn {
-  background-color: lightseagreen;
+  background-color: #333;
   color: white;
   padding: 16px 20px;
   border: none;
@@ -339,47 +339,41 @@ button {
   right: 28px;
   width: 280px;
 }
-.form-container .submit-btn {
+.submit-btn {
   position: fixed;
   bottom: 90px;
   right: 28px;
   width: 280px;
   height: 50px;
-  background-color: lightseagreen;
+  background-color: #17a2b8;
   color: white;
 }
-
 .chat-input {
   width: 280px;
-  height: 80px;
+  height: 60px;
   position: fixed;
-  bottom: 142px;
-  right: 31px;
-  background-color: whitesmoke;
-  border: none;
-
-  /* margin-right: 75px;*/
+  bottom: 150px;
+  right: 30px;
 }
 
-.chat-div {
+/*.chat-div {
   position: fixed;
   bottom: 100px;
   width: 280px;
   right: 28px;
   border: 3px solid #f1f1f1;
   z-index: 9;
-}
+}*/
 .form-container {
   max-width: 300px;
-  margin-top: 30px;
   padding: 10px;
 }
 .wrap {
   position: fixed;
   bottom: 90px;
-  left: 1190px;
+  right: 30px;
   width: 280px;
-  height: 260px;
+  height: 360px;
   padding: 10px;
   background-color: whitesmoke;
 }

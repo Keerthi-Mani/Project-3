@@ -65,12 +65,13 @@ class Chat extends React.Component {
               <form className="form-container">
                 <input
                   className="chat-input"
+                  placeholder="Type message....."
                   value={this.state.msg}
                   onChange={this.handleTyping}
                 ></input>
                 <br></br>
                 <button onClick={this.handleSubmit} className="submit-btn">
-                  Submit
+                  Send
                 </button>
               </form>
             </div>
