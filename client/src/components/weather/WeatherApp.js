@@ -3,13 +3,11 @@ import "./WeatherApp.css";
 import Form from "./WeatherForm";
 import Weather from "./Weather";
 import "weather-icons/css/weather-icons.css";
-import dotenv from "dotenv";
-dotenv.config();
+require("dotenv").config();
 // require('dotenv').config();
 // import "bootstrap/dist/css/bootstrap.min.css";
 
 // git project https://github.com/erikflowers/weather-icons
-
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 
