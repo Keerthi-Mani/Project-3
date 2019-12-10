@@ -20,18 +20,17 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
         </Link>
       </li>
       <li>
-        <a onClick={logout} href="#!">
+        <Link onClick={logout} href="/landing">
           <i className="fas fa-sign-out-alt" />{" "}
           <span className="hide-sm">Logout</span>
-        </a>
+        </Link>
       </li>
       <li>
-        <Link to="/weather" >
+        <Link to="/weather">
           <i className="fas fa-cloud-sun-rain" />{" "}
           <span className="hide-sm">Weather</span>
         </Link>
       </li>
-
     </ul>
   );
 
@@ -56,7 +55,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     <nav className="navbar bg-dark">
       <h1>
         <Link to="/">
-          <i className="fas"></i> Friends Connector
+          <i className="fas fa-home"></i> Friends Connector
         </Link>
       </h1>
       {!loading && (
