@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2b420e87.chunk.css",
+    "main.js": "/static/js/main.f04c9142.chunk.js",
+    "main.js.map": "/static/js/main.f04c9142.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.88d4f3f8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.88d4f3f8.js.map",
+    "static/css/2.31352408.chunk.css": "/static/css/2.31352408.chunk.css",
+    "static/js/2.a35683f4.chunk.js": "/static/js/2.a35683f4.chunk.js",
+    "static/js/2.a35683f4.chunk.js.map": "/static/js/2.a35683f4.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.fe65c878bc268fea07057e548dd0621a.js": "/precache-manifest.fe65c878bc268fea07057e548dd0621a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.31352408.chunk.css.map": "/static/css/2.31352408.chunk.css.map",
+    "static/css/main.2b420e87.chunk.css.map": "/static/css/main.2b420e87.chunk.css.map",
+    "static/js/2.a35683f4.chunk.js.LICENSE": "/static/js/2.a35683f4.chunk.js.LICENSE",
+    "static/media/App.css": "/static/media/background.6a57bfa4.gif",
+    "static/media/Weather.css": "/static/media/sky.211c121e.jpg",
+    "static/media/spinner.gif": "/static/media/spinner.26ef8bb4.gif",
+    "static/media/weather-icons.css": "/static/media/weathericons-regular-webfont.ecaf8b48.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.88d4f3f8.js",
+    "static/css/2.31352408.chunk.css",
+    "static/js/2.a35683f4.chunk.js",
+    "static/css/main.2b420e87.chunk.css",
+    "static/js/main.f04c9142.chunk.js"
+  ]
+}
