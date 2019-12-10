@@ -44,6 +44,9 @@ const App = () => {
         <Fragment>
           <Navbar />
           <Route exact path="/" component={Landing} />
+          {/* <div class="weather-weather">
+            <Route exact path="/weather" component={WeatherApp} />
+          </div> */}
           <section className="container">
             <Alert />
             <Switch>

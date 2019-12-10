@@ -542,6 +542,29 @@ button {
   margin-bottom: 0.5rem;
 }
 
+/* weather css */
+.weather-weather {
+  margin-left: 10%;
+  width: 80%;
+  z-index: 2;
+}
+.pyw-4 {
+  height: 20px;
+}
+.btn-weather {
+  display: inline-block;
+  background: var(--light-color);
+  color: #333;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+  margin-top: 20px;
+}
+
 /* Mobile Styles */
 @media (max-width: 700px) {
   .container {
@@ -627,14 +650,5 @@ button {
   .post a,
   .post button {
     padding: 0.3rem 0.4rem;
-  }
-  /* weather css */
-  .weather-container {
-    float: right;
-    width: 20%;
-    z-index: 2;
-  }
-  .pyw-4 {
-    height: 30px;
   }
 }

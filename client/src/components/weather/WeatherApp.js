@@ -2,12 +2,16 @@ import React from "react";
 import "./WeatherApp.css";
 import Form from "./WeatherForm";
 import Weather from "./Weather";
+import "weather-icons/css/weather-icons.css";
+import dotenv from "dotenv";
+dotenv.config();
+// require('dotenv').config();
 // import "bootstrap/dist/css/bootstrap.min.css";
 
 // git project https://github.com/erikflowers/weather-icons
-import "weather-icons/css/weather-icons.css";
 
-const Api_Key = "429736441cf3572838aa10530929f7cd";
+
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 class WeatherApp extends React.Component {
   constructor() {
@@ -76,7 +80,7 @@ class WeatherApp extends React.Component {
 
     if (country && city) {
       const api_call = await fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${Api_Key}`
+        `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}`
       );
 
       const response = await api_call.json();
