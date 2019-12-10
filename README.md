@@ -1,4 +1,5 @@
-<img width="926" alt="Screen Shot 2019-12-09 at 12 07 36 PM" src="https://user-images.githubusercontent.com/52920074/70456703-a6819b00-1a7c-11ea-90a8-c73b6053489f.png">
+<img width="1131" alt="Screen Shot 2019-12-10 at 11 44 30 AM" src="https://user-images.githubusercontent.com/52920074/70549600-7a305200-1b42-11ea-8e0e-0c554ff63904.png">
+
 <br>
 A platform for friends to connect. They can create their profile by adding their experience, education, skills and other important information of their professional career.
 
@@ -132,7 +133,7 @@ npm start
 
 ### <strong>Landing Page</strong>
 
-<img width="948" alt="Screen Shot 2019-12-09 at 12 39 52 PM" src="https://user-images.githubusercontent.com/52920074/70459001-48a38200-1a81-11ea-8dbf-6b598c5491e2.png">
+<img width="1439" alt="Screen Shot 2019-12-10 at 11 44 03 AM" src="https://user-images.githubusercontent.com/52920074/70549595-78ff2500-1b42-11ea-96af-4447bb1742ed.png">
 <br>
 
 ### <strong>Sign Up</strong>
