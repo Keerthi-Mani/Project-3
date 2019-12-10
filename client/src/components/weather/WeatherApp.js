@@ -3,7 +3,8 @@ import "./WeatherApp.css";
 import Form from "./WeatherForm";
 import Weather from "./Weather";
 import "weather-icons/css/weather-icons.css";
-require("dotenv").config();
+import dotenv from "dotenv";
+dotenv.config();
 // require('dotenv').config();
 // import "bootstrap/dist/css/bootstrap.min.css";
 
