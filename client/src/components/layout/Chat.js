@@ -1,7 +1,5 @@
 import React from "react";
 import { readChat, sendChat } from "../../sockethelper";
-import queryString from "query-string";
-import io from "socket.io-client";
 
 class Chat extends React.Component {
   constructor(props) {
