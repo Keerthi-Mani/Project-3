@@ -226,7 +226,7 @@ img {
 
 /* Overlay */
 .dark-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
+  /* background-color: rgba(0, 0, 0, 0.7); */
   position: absolute;
   top: 0;
   left: 0;
@@ -387,14 +387,14 @@ button {
 /* Landing Page */
 .landing {
   position: relative;
-  background: url("./img/friends1.jpeg") no-repeat center center/cover;
+  background: url("./img/background.gif") no-repeat center center/cover;
   height: 100vh;
 }
 
 .landing-inner {
-  color: #fff;
+  color: black;
   height: 100%;
-  width: 80%;
+  width: 50%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -633,7 +633,6 @@ button {
     float: right;
     width: 20%;
     z-index: 2;
-  
   }
   .pyw-4 {
     height: 30px;
