@@ -5,6 +5,7 @@ const path = require("path");
 const app = express();
 var http = require("http").createServer(app);
 var io = require("socket.io")(http);
+const cors = require("cors");
 
 //Connect to Port
 const PORT = process.env.PORT || 3001;
@@ -12,6 +13,7 @@ const PORT = process.env.PORT || 3001;
 //Connect Database
 connectDB();
 
+app.use(cors());
 //Init Middleware
 app.use(express.json({ extended: false }));
 
@@ -43,6 +45,7 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.resolve(__dirname, "client/public/index.html"));
   });
 }
-io.listen(5001);
+//io.listen(5001);
 
-app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+//app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+http.listen(PORT, () => console.log(`Server started on port ${PORT}`));

@@ -62,20 +62,20 @@ class Chat extends React.Component {
                 </section>
               );
             })}
-
-            <div className="chat-div" id="myForm">
-              <form className="form-container">
-                <input
-                  className="chat-input"
-                  value={this.state.msg}
-                  onChange={this.handleTyping}
-                ></input>
-                <br></br>
-                <button onClick={this.handleSubmit} className="submit-btn">
-                  Submit
-                </button>
-              </form>
-            </div>
+          </div>
+          <div className="chat-div" id="myForm">
+            <form className="form-container">
+              <textarea
+                className="chat-input"
+                placeholder="Type message....."
+                value={this.state.msg}
+                onChange={this.handleTyping}
+              ></textarea>
+              <br></br>
+              <button onClick={this.handleSubmit} className="submit-btn">
+                Submit
+              </button>
+            </form>
           </div>
         </div>
       </>
