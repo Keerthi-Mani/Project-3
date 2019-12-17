@@ -7,7 +7,7 @@ A platform for friends to connect. They can create their profile by adding their
 
 Users can also create small posts and like/dislike and comment on other posts.
 
-<strong>Live Link:</strong> [Click here](https://gentle-island-67954.herokuapp.com/)
+<strong>Live Link:</strong> [Click here]( https://stormy-reaches-32043.herokuapp.com/)
 
 ## Quick Start
 
